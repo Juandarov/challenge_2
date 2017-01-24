@@ -48,6 +48,8 @@ header span {
 
 ul {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 nav {
@@ -133,15 +135,13 @@ footer {
     background-color: white;
     margin: auto;
     vertical-align: top;
-    height: 400px;
+    height: 550px;
 }
 
 #archives {
     width: 900px;
     margin: auto;
 }
-
-
 
 footer section {
     display: inline-block;
