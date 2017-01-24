@@ -101,9 +101,12 @@ nav ul ul li {
 }
 
 nav ul li:hover ul {
+    padding: 1em;
     padding-top: 1em;
     display: block;
     position: absolute;
+    background-color: #F4F4F4;
+    height: 99px;
 
 }
 
