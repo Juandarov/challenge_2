@@ -2,7 +2,13 @@
     font-family: helvetica;
 }
 
-Body {
+#container {
+    width: 994px;
+    margin: auto;
+    box-shadow: 0 0 5px #505050;
+}
+
+body {
     background-image: url(../images/bg.png);
     background-attachment: fixed;
 }
@@ -15,14 +21,13 @@ header {
 }
 
 header img {
-    background-size: contain;
     padding: 0.2em 0.5em;
     background-color: #FAFAFA;
     float: right;
     vertical-align: top;
     margin-top: 90px;
     margin-right: 47px;
-    border-bottom: 1px solid #F0F0F0
+    border-bottom: 1px solid #F0F0F0;
 
 }
 
@@ -55,6 +60,7 @@ ul {
 nav {
     height: 59px;
     width: 900px;
+    padding-top: 25px;
     margin: auto;
     padding-bottom: 25px;
 }
@@ -63,12 +69,13 @@ nav ul {
     background-color: #FAFAFA;
     text-align: center;
     padding: 0;
+
     height: 59px;
     border-top: 1px solid #F0F0F0;
     border-bottom: 1px solid #F0F0F0;
 }
 
-nav ul li {
+nav > ul > li {
     display: inline-block;
     margin-top: 20px;
     width: 16%;
@@ -77,6 +84,27 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #505050;
+}
+
+
+nav ul ul {
+    display: none;
+
+}
+
+nav ul ul li {
+    height: 33px;
+    display: block;
+    color: rgb(57, 57, 57);
+    background-color: #F4F4F4;
+    margin: 0;
+}
+
+nav ul li:hover ul {
+    padding-top: 1em;
+    display: block;
+    position: absolute;
+
 }
 
 h2 {
@@ -115,38 +143,44 @@ p {
 }
 
 #separateur {
-    margin-bottom: 75px;
     width: 900px;
     height: 40px;
     border-top: 1px solid #F0F0F0;
     border-bottom: 1px solid #F0F0F0;
     background-color: #FAFAFA;
     margin: auto;
-    margin-bottom: 75px;
+    margin-bottom: 40px;
 }
 
 h3 {
+    font-weight: normal;
+    color: #494949;
     text-align: center;
     margin-top: 0;
 }
+
 
 footer {
     width: 994px;
     background-color: white;
     margin: auto;
     vertical-align: top;
-    height: 550px;
+    height: 450px;
 }
 
 #archives {
     width: 900px;
     margin: auto;
+    border-top: 1px solid #F0F0F0;
+    border-bottom: 1px solid #F0F0F0;
+    background-color: #FAFAFA;
 }
 
 footer section {
     display: inline-block;
-    width: 24%;
+    width: 21%;
     height: 235px;
     vertical-align: top;
     margin: auto;
+    padding: 1em 1em 2em;
 }
